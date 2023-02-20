@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<appengine-web-app xmlns="http://appengine.google.com/ns/1.0">
+
+  <threadsafe>true</threadsafe>
+  <sessions-enabled>true</sessions-enabled>
+  <runtime>java8</runtime>
+
+  <system-properties>
+   <property name="java.util.logging.config.file" value="WEB-INF/logging.properties"/>
+    
+    <!-- Default database to be used while getting the connection. -->
+    <property name="com.gulbrandsen.cloudsql.database" value="gulbrandsen_users"/>
+   
+    <!-- Local MySQL connection host name -->
+    <property name="com.gulbrandsen.cloudsql.localhost" value="localhost"/>
+   
+    <!-- Local MySQL connection port -->
+    <property name="com.gulbrandsen.cloudsql.localport" value="3306"/>
+   
+    <!-- Local MySQL connection user name -->
+    <property name="com.gulbrandsen.cloudsql.localuser" value="root"/>
+   
+    <!-- Local MySQL connection password -->
+    <property name="com.gulbrandsen.cloudsql.localpwd" value="1234"/>
+  </system-properties>
+
+</appengine-web-app>
